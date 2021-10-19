@@ -4,10 +4,10 @@ namespace ConsoleApplication1
 {
     class CircularQueue
     {
-        private int []ele;
+        private int [] readonly ele;
         private int front;
         private int rear;
-        private int max;
+        private int readonly max;
         private int count;
 
         public CircularQueue(int size)
@@ -75,7 +75,7 @@ namespace ConsoleApplication1
         }
     }
 
-    class Program
+    protected class Program
     {
         static void Main()
         {
